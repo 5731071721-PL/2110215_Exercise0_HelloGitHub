@@ -15,12 +15,38 @@ public class Hello {
 
 	public static String greetingMessage(){
 		// TODO Implement this method to return string "Hello GitHub".
-		return "";
+		return "Hello GitHub";
 	}
 	
 	public static int[] bubbleSort(int[] array){
 		// TODO Implement this method to sort the given array in an ascending order and return the sorted array.
+		for (int i = 0; i < array.length; i++) {
+			for (int j = 0; j < array.length; j++) {
+				if(array[i]<array[j]){
+					int k = array[i];
+					array[i]= array[j];
+					array[j] = k;
+					
+				}
+			}
+		}
+		
+//		Boolean isSwap;
+//		do{
+//			isSwap = false;
+//			for (int i = 0; i < array.length-1; i++) {
+//				if(array[i]>array[i+1]){
+//					int temp = array[i];
+//					array[i] = array[i+1];
+//					array[i+1] = temp;
+//					isSwap =true;
+//				}
+//			}
+//		}
+//		while(isSwap);
+		
 		return array;
+		
 	}
 	
 	public static String arrayToString(String title,int[] array){
